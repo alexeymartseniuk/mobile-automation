@@ -1,0 +1,27 @@
+{
+  "name": "mobile-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "android.tests.native": "npx wdio wdio.conf.js --spec src/test/specs/android/nativeFeatures.test.js",
+    "android.tests.products": "npx wdio wdio.conf.js --spec src/test/specs/android/products.test.js",
+    "android.tests.logout": "npx wdio wdio.conf.js --spec src/test/specs/android/logout.test.js",
+    "android.tests.all": "npx wdio wdio.conf.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
+    "@babel/register": "^7.18.9",
+    "@wdio/appium-service": "^7.25.1",
+    "@wdio/cli": "^7.25.1",
+    "@wdio/local-runner": "^7.25.1",
+    "@wdio/mocha-framework": "^7.25.1",
+    "@wdio/spec-reporter": "^7.25.1",
+    "appium": "^2.0.0-beta.44",
+    "appium-uiautomator2-driver": "^2.7.1",
+    "chromedriver": "^106.0.1",
+    "wdio-chromedriver-service": "^8.0.0",
+    "chai": "^4.3.6"
+  }
+}
