@@ -3,7 +3,7 @@ import LeftSideMenuScreen from "../../../screens/android/sharedComponents/leftSi
 import LoginScreen from "../../../screens/android/loginScreen";
 import ProductsScreen from "../../../screens/android/productsScreen";
 
-describe('Login screen', () => {
+describe('Android. Login screen', () => {
     const leftSideMenuScreen = new LeftSideMenuScreen();
     const loginScreen = new LoginScreen();
     const productsScreen = new ProductsScreen();

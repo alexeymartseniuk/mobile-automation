@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "android.tests.native": "npx wdio wdio.conf.js --spec src/test/specs/android/nativeFeatures.test.js",
-    "android.tests.products": "npx wdio wdio.conf.js --spec src/test/specs/android/products.test.js",
-    "android.tests.logout": "npx wdio wdio.conf.js --spec src/test/specs/android/logout.test.js",
-    "android.tests.all": "npx wdio wdio.conf.js"
+    "android.tests.native": "npx wdio src/configs/wdio.android.conf.js --spec src/test/specs/android/nativeFeatures.test.js",
+    "android.tests.products": "npx wdio src/configs/wdio.android.conf.js --spec src/test/specs/android/products.test.js",
+    "android.tests.logout": "npx wdio src/configs/wdio.android.conf.js --spec src/test/specs/android/logout.test.js",
+    "android.tests.all": "npx wdio src/configs/wdio.android.conf.js",
+    "ios.tests.all": "npx wdio src/configs/wdio.ios.conf.js"
   },
   "license": "ISC",
   "devDependencies": {
@@ -20,8 +21,9 @@
     "@wdio/spec-reporter": "^7.25.1",
     "appium": "^2.0.0-beta.44",
     "appium-uiautomator2-driver": "^2.7.1",
+    "appium-xcuitest-driver": "^4.12.1",
+    "chai": "^4.3.6",
     "chromedriver": "^106.0.1",
-    "wdio-chromedriver-service": "^8.0.0",
-    "chai": "^4.3.6"
+    "wdio-chromedriver-service": "^8.0.0"
   }
 }
