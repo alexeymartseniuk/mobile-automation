@@ -12,7 +12,7 @@ describe('iOS. Login screen', () => {
     })
 
     afterEach(async () => {
-        await driver.reloadSession();
+        await driver.reset();
     })
 
     it('Error message if user passes authorization with invalid credentials', async () => {

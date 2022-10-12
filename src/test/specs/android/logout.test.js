@@ -19,7 +19,7 @@ describe('Logout screen', () => {
     })
 
     afterEach(async () => {
-        await driver.reloadSession();
+        await driver.reset();
     })
 
     it('User makes logout', async () => {

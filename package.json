@@ -7,6 +7,7 @@
     "android.tests.products": "npx wdio src/configs/wdio.android.conf.js --spec src/test/specs/android/products.test.js",
     "android.tests.logout": "npx wdio src/configs/wdio.android.conf.js --spec src/test/specs/android/logout.test.js",
     "android.tests.all": "npx wdio src/configs/wdio.android.conf.js",
+    "android.browserstack.all": "npx wdio src/configs/wdio.browserstack.android.conf.js",
     "ios.tests.all": "npx wdio src/configs/wdio.ios.conf.js"
   },
   "license": "ISC",
@@ -15,6 +16,7 @@
     "@babel/preset-env": "^7.19.3",
     "@babel/register": "^7.18.9",
     "@wdio/appium-service": "^7.25.1",
+    "@wdio/browserstack-service": "^7.25.1",
     "@wdio/cli": "^7.25.1",
     "@wdio/local-runner": "^7.25.1",
     "@wdio/mocha-framework": "^7.25.1",
@@ -25,5 +27,8 @@
     "chai": "^4.3.6",
     "chromedriver": "^106.0.1",
     "wdio-chromedriver-service": "^8.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
   }
 }

@@ -78,8 +78,13 @@ To check if your OS meets the appium requirements, install this node package.
 * Install Appium in your project
   `npm install --save-dev appium@next`
 
-# Run tests
+# Run tests locally:
 * Instal; all dependencies: `npm install`
 * Run virtual devices
 * Run appium server: `appium -p 4724`
 * Run tests using scripts in `package.json`
+
+# Run tests on browserstack cloud:
+* Create `.env` file in the root of the project
+* Add `BROWSERSTACK_USER=user` and `BROWSERSTACK_KEY=key`
+* Run test script `npm run android.browserstack.all`
